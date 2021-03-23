@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LyricsDo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topBlock">
+      <div class="searchBlock">
+        <div class="titleField">LyricsDo</div>
+        <div class="searchField">
+          <input
+            type="text"
+            class="searchBox"
+            id="searchBox"
+            placeholder="Enter artist or song name..."
+          />
+          <button class="searchButton" id="searchBtn">search</button>
+        </div>
+        <div class="warningText">Don't leave me empty</div>
+      </div>
+    </div>
+    <div class="contentBlock"></div>
+    <div class="lyricsBlock">
+      <div class="lyricsCloseBtn">X</div>
+      <div class="lyricsCard"></div>
+    </div>
+    <div class="pagination">
+      <button id="prevBtn">Prev</button>
+      <button id="nextBtn">Next</button>
+    </div>
+
+    <script src="scripts.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+  </body>
+</html>

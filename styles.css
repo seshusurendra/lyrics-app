@@ -1,0 +1,67 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* position: relative; */
+  overflow-x: hidden;
+}
+
+.searchContainer {
+  width: 100%;
+  height: 40vh;
+  border: 1px solid red;
+  position: absolute;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./assets/hero-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.searchField {
+  padding: 15vh;
+  z-index: 100;
+}
+
+input#searchInput {
+  line-height: 1vh;
+  width: 50%;
+  position: relative;
+  border-radius: 25px;
+  outline-style: none;
+  border-style: none;
+  padding: 1vh;
+  font-size: 2rem;
+}
+
+.searchBtn {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 29%;
+  top: 38%;
+  border-radius: 25px;
+  outline-style: none;
+  border-style: none;
+  background-color: #5c6ac4;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.AlbumContainer {
+  width: 100%;
+  height: 55vh;
+  border: 1px solid green;
+  position: absolute;
+  top: 290px;
+}
+
+.pagination {
+  width: 100%;
+  height: 30px;
+  border: 1px solid blue;
+  position: absolute;
+  /* left: 0; */
+  top: 688px;
+}

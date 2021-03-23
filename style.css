@@ -1,0 +1,335 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* top block */
+.topBlock {
+  height: 50vh;
+  max-width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+    url(./assets/hero-background.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.searchBlock {
+  /* border: 1px solid red; */
+  text-align: center;
+  margin: 15vh;
+  line-height: 5vh;
+}
+
+.titleField {
+  margin: auto;
+  font-size: 30px;
+  padding: 5px;
+  color: rgb(29, 27, 27);
+  color: white;
+}
+
+.searchField {
+  margin: auto;
+  padding: 10px;
+  width: 100%;
+}
+
+.searchBox,
+.searchButton {
+  border-style: none;
+  font-size: 3vh;
+  height: 3vw;
+  outline: none;
+  border-radius: 10px;
+  /* position: relative; */
+}
+
+#searchBtn {
+  /* width: 9vw; */
+  cursor: pointer;
+  /* position: absolute; */
+  /* top: 46px;
+  right: 26px; */
+  text-align: center;
+  background-color: 87ceeb;
+  /* color: white; */
+}
+
+#searchBox {
+  width: 100vh;
+  position: relative;
+}
+
+.warningText {
+  color: red;
+  font-size: 25px;
+}
+
+.titleBlock {
+  font-size: 50px;
+  /* padding: 50px; */
+  margin: 50px auto;
+}
+
+.lyricsCloseBtn {
+  font-size: 50px;
+  position: absolute;
+  right: 20px;
+  top: 52%;
+  cursor: pointer;
+}
+.contentBlock {
+  width: 500px;
+  margin: 0 auto;
+  /* overflow: scroll; */
+}
+
+.contentBlock .card {
+  margin: 30px auto;
+  background: #ffe4e1;
+  width: 500px;
+  border-radius: 25px;
+  height: 200px;
+  /* overflow: hidden; */
+}
+
+.contentBlock .card #coverPage {
+  float: left;
+  margin: 15px 0;
+  padding: 25px 10px;
+  border-radius: 50%;
+}
+
+.dataBlock {
+  float: left;
+  margin: 6px 0;
+  padding: 25px 10px;
+  border-radius: 50%;
+  width: 340px;
+  text-align: start;
+}
+
+.contentBlock .card .dataBlock .metadata {
+  padding: 10px;
+  /* display: flex;
+  flex-wrap: nowrap; */
+  /* word-wrap: break-word; */
+  white-space: initial;
+}
+
+.showLyricsBtn {
+  font-size: 20px;
+  border-radius: 25px;
+  border-style: none;
+  padding: 10px;
+  background: blue;
+  color: white;
+  outline-style: none;
+  cursor: pointer;
+}
+
+.pagination #prevBtn,
+.pagination #nextBtn {
+  padding: 10px;
+  font-size: 25px;
+  margin: 50px;
+  width: 150px;
+  border-style: none;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+}
+
+.lyricsCard {
+  /* background: #dda0dd; */
+  margin: 50px 0;
+  padding: 20px;
+  border-radius: 25px;
+  line-height: 200%;
+  font-size: 25px;
+  text-align: justify;
+  position: relative;
+}
+
+#playIcon {
+  font-size: 50px;
+  color: white;
+}
+
+/* @media (max-width: 300px) {
+  #topBlock {
+    width: 70%;
+  }
+} */
+
+@media only screen and (max-width: 600px) {
+  .contentBlock .card {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+/* .searchButton {
+  height: 2.1rem;
+  width: 4.5rem;
+  position: absolute;
+  top: 161px;
+  right: 530px;
+  border-radius: 5px;
+  background-color: #5b5bd5;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border-style: none;
+} */
+
+/* .warningText {
+  width: 100%;
+  text-align: center;
+  color: red;
+  margin: 10px;
+  display: none;
+} */
+/* end of Top block */
+
+/* Lyrics floating block */
+/* .contentBlock {
+  text-align: left;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+} */
+
+/* Lyric card */
+/* .card { */
+/* Add shadows to create the "card" effect */
+/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 25px;
+  width: 40%;
+  margin: 5px 0 5px 30%;
+  background-color: white;
+  position: relative;
+} */
+
+/* On mouse-over, add a deeper shadow */
+/* .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: #32312c4f;
+} */
+
+/* Add some padding inside the card container */
+
+/* song and album details */
+/* .coverPage {
+  margin: 5px 0px 5px 10px;
+  padding: 5px 5px 5px 10px;
+} */
+
+/* .titles {
+  vertical-align: 65px;
+  font-size: 20px;
+  font-family: cursive;
+} */
+
+/* #songTitle {
+  padding: 5px;
+  margin: 5px;
+}
+
+#artistName {
+  padding: 5px;
+  margin: 5px;
+}
+
+.showLyricsBtn {
+  padding: 10px;
+  position: absolute;
+  border-radius: 25px;
+  font-size: 25px;
+  right: 20px;
+  top: 90px;
+  background-color: rgb(39, 110, 218);
+  border: none;
+  outline: none;
+  cursor: pointer;
+} */
+
+/* end of lyrics floating block */
+
+/* lyrics card */
+/* .cardLyrics {
+  margin-left: 15%;
+  margin-top: 5%;
+  padding: 100px;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 25px;
+}
+
+.title {
+  display: inline-block;
+  margin: auto;
+}
+
+#songTitle {
+  font-size: 30px;
+  font-family: monospace;
+}
+
+#artistTitle {
+  font-family: cursive;
+  color: red;
+}
+
+.lyrics {
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 10px;
+} */
+
+/* Pagination starts here */
+/* .pagination {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  word-spacing: 20px;
+  margin: 20px;
+}
+
+#prevBtn {
+  font-size: 15px;
+  padding: 10px;
+  word-wrap: none;
+  border-radius: 10px;
+  border-style: none;
+  background-color: rgb(35, 35, 194);
+  color: white;
+  width: 80px;
+  outline: none;
+  cursor: pointer;
+}
+
+#nextBtn {
+  font-size: 15px;
+  padding: 10px;
+  word-wrap: none;
+  border-radius: 10px;
+  border-style: none;
+  background-color: rgb(35, 35, 194);
+  color: white;
+  width: 80px;
+  outline: none;
+  cursor: pointer;
+} */
